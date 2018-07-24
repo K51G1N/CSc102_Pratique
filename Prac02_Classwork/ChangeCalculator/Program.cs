@@ -36,7 +36,8 @@ namespace ChangeCalculator
             int ncn = 0;
             while (rand != 0)
             {
-                 nrn = rand % Currency[i];
+                 
+nrn = rand % Currency[i];
                 rand = rand - nrn * Currency[i];
                 if (i > 4)
                 {
