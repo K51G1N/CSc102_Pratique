@@ -46,7 +46,136 @@ namespace TaxesCalculator
             int nsalary = Convert.ToInt32(salary);
             Console.ReadLine();
 
+            if (nage < 65)
+            {
+                if (nsalary < 5000)
+                {
+                    Console.WriteLine("Your taxe payment is 0");
+                }
+                else if (nsalary < 6500)
+                {
+                    Console.WriteLine("Your taxe payment is 13");
+                }
+                else if (nsalary < 7800)
+                {
+                    Console.WriteLine("Your taxe payment is 250");
+                }
+                else if (nsalary < 10000)
+                {
+                    Console.WriteLine("Your taxe payment is 620");
+                }
+                else if (nsalary < 13500)
+                {
+                    Console.WriteLine("Your taxe payment is 1200");
+                }
+                else if (nsalary < 17900)
+                {
+                    Console.WriteLine("Your taxe payment is 2100");
+                }
+                else if (nsalary < 20000)
+                {
+                    Console.WriteLine("Your taxe payment is 2700");
+                }
+                else if (nsalary < 40000)
+                {
+                    Console.WriteLine("Your taxe payment is 8000");
+                }
+                else if (nsalary < 60000)
+                {
+                    Console.WriteLine("Your taxe payment is 16000");
+                }
+                else if (nsalary >= 60000)
+                {
+                    Console.WriteLine("Your taxe payment is 20000");
+                }
+            }
+            else if (nage >= 65 && nage <= 75)
+            {
+                if (nsalary < 5000)
+                {
+                    Console.WriteLine("Your taxe payment is 0");
+                }
+                else if (nsalary < 6500)
+                {
+                    Console.WriteLine("Your taxe payment is 0");
+                }
+                else if (nsalary < 7800)
+                {
+                    Console.WriteLine("Your taxe payment is 0");
+                }
+                else if (nsalary < 10000)
+                {
+                    Console.WriteLine("Your taxe payment is 0");
+                }
+                else if (nsalary < 13500)
+                {
+                    Console.WriteLine("Your taxe payment is 600");
+                }
+                else if (nsalary < 17900)
+                {
+                    Console.WriteLine("Your taxe payment is 1500");
+                }
+                else if (nsalary < 20000)
+                {
+                    Console.WriteLine("Your taxe payment is 2000");
+                }
+                else if (nsalary < 40000)
+                {
+                    Console.WriteLine("Your taxe payment is 7500");
+                }
+                else if (nsalary < 60000)
+                {
+                    Console.WriteLine("Your taxe payment is 15600");
+                }
+                else if (nsalary >= 60000)
+                {
+                    Console.WriteLine("Your taxe payment is 17050");
+                }
 
+            }
+            else if(nage > 75)
+            {
+                if (nsalary < 5000)
+                {
+                    Console.WriteLine("Your taxe payment is 0");
+                }
+                else if (nsalary < 6500)
+                {
+                    Console.WriteLine("Your taxe payment is 0");
+                }
+                else if (nsalary < 7800)
+                {
+                    Console.WriteLine("Your taxe payment is 0");
+                }
+                else if (nsalary < 10000)
+                {
+                    Console.WriteLine("Your taxe payment is 0");
+                }
+                else if (nsalary < 13500)
+                {
+                    Console.WriteLine("Your taxe payment is 400");
+                }
+                else if (nsalary < 17900)
+                {
+                    Console.WriteLine("Your taxe payment is 1200");
+                }
+                else if (nsalary < 20000)
+                {
+                    Console.WriteLine("Your taxe payment is 1800");
+                }
+                else if (nsalary < 40000)
+                {
+                    Console.WriteLine("Your taxe payment is 7300");
+                }
+                else if (nsalary < 60000)
+                {
+                    Console.WriteLine("Your taxe payment is 15400");
+                }
+                else if (nsalary >= 60000)
+                {
+                    Console.WriteLine("Your taxe payment is 17000");
+                }
+            }
         }
     }
 }
