@@ -133,7 +133,7 @@ namespace TaxesCalculator
                 }
 
             }
-            else if(nage > 75)
+            else
             {
                 if (nsalary < 5000)
                 {
@@ -171,7 +171,7 @@ namespace TaxesCalculator
                 {
                     Console.WriteLine("Your taxe payment is 15400");
                 }
-                else if (nsalary >= 60000)
+                else
                 {
                     Console.WriteLine("Your taxe payment is 17000");
                 }
