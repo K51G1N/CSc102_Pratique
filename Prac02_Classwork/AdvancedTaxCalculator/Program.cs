@@ -13,7 +13,7 @@ namespace AdvancedTaxCalculator
         {
             double SalaryTot = 0;          // variable intializers
             int AgeTot = 0;
-            int totaltax = 0;
+            double totaltax = 0;
             int taxpayers = 0;
             int nage = 0;
             bool stop = false;
@@ -100,7 +100,7 @@ namespace AdvancedTaxCalculator
 
             }
             nsalary = Convert.ToDouble(salary);         // converts salary to double
-            Console.ReadLine();
+            
             
             if (nage < 65)                                          // Bracketing for tax due age then income within age
             {
@@ -274,12 +274,12 @@ namespace AdvancedTaxCalculator
                 check = false;
         }
             double AgeAVG = AgeTot / taxpayers;
-            double SalaryAVG = System.Math.Round((SalaryTot / taxpayers), 2);
+            double SalaryAVG = SalaryTot / taxpayers;
             double TaxAvg = totaltax / taxpayers;
             Console.WriteLine();
-            Console.WriteLine("The average age of taxpayers is: " + AgeAVG);
-            Console.WriteLine("The average monthly salary of taxpayers is: " + SalaryAVG);
-            Console.WriteLine("The average tax payment is: " + TaxAvg);
+            Console.WriteLine("The average age of taxpayers is: " + AgeAVG +" years");
+            Console.WriteLine("The average monthly salary of taxpayers is: R" + SalaryAVG);
+            Console.WriteLine("The average tax payment is: R" + TaxAvg);
 
 
                 
